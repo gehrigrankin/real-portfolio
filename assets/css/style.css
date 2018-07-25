@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee+Hairline");
+html, body {
+  max-height: 100vh;
+  margin: 0; }
+
+#main-view {
+  height: 100vh;
+  position: absolute; }
+
+#navbar {
+  position: fixed;
+  right: -75px;
+  top: 0;
+  width: 75px;
+  height: 100vh;
+  background-color: #1a1a1a;
+  z-index: 1;
+  animation: navSlideIn 2s ease-in-out forwards;
+  animation-delay: 5s; }
+
+#nav-container {
+  height: 100vh;
+  margin: 40vh auto; }
+
+.nav.icon {
+  position: relative;
+  width: 100%;
+  height: 60px; }
+  .nav.icon i {
+    font-size: 35px; }
+  .nav.icon .active {
+    color: #00d1b2; }
+  .nav.icon:hover {
+    background-color: #262626; }
+    .nav.icon:hover i {
+      color: #00d1b2; }
+
+#landing {
+  position: relative;
+  padding: 25% 0;
+  font-family: 'Bungee Hairline';
+  word-spacing: 10px;
+  animation: landSlideUp 2.5s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards; }
+
+#land-full-name {
+  position: relative;
+  vertical-align: middle;
+  animation: slideLeft 2s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards; }
+
+#land-role {
+  position: relative;
+  color: white;
+  animation: fadeOut 1s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards; }
+
+#main-container {
+  position: absolute;
+  right: 75px;
+  left: 0;
+  height: 100%;
+  opacity: 1;
+  margin: -50px 0; }
+
+#main-container::-webkit-scrollbar {
+  display: none; }
+
+.section {
+  height: 100vh; }
+  .section ::after {
+    vertical-align: middle; }
+
+#about-container, #portfolio-container, #skills-container, #contact-container {
+  margin: 25px 125px; }
+
+#about-me-window {
+  position: relative;
+  opacity: 0;
+  background-color: grey;
+  padding: 25px;
+  border-top: 50px solid #262626;
+  animation: showContainer 1.5s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 3s; }
+
+#profile-pic {
+  position: absolute;
+  top: -125px;
+  right: -50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  border: 10px solid rgba(0, 0, 0, 0.5); }
+
+#portfolio-container {
+  position: relative; }
+  #portfolio-container #project-title {
+    font-family: 'Bungee Hairline'; }
+  #portfolio-container .port-cols .column {
+    margin: 10px;
+    padding: 0;
+    border: 5px solid rgba(50, 50, 50, 0.75);
+    border-radius: 5px; }
+    #portfolio-container .port-cols .column .project {
+      margin: 5px;
+      border-radius: 5px;
+      height: 200px;
+      background-color: #fff; }
+    #portfolio-container .port-cols .column:hover {
+      border: 5px solid #00d1b2; }
+
+#skills-container {
+  position: relative; }
+  #skills-container #skills-title {
+    font-family: 'Bungee Hairline'; }
+
+@keyframes showContainer {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes landSlideUp {
+  from {
+    padding: 25% 0; }
+  to {
+    padding: 20px 0; } }
+
+@keyframes slideLeft {
+  from {
+    right: auto; }
+  to {
+    right: 0; } }
+
+@keyframes navSlideIn {
+  from {
+    right: -75px; }
+  to {
+    right: 0; } }
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    color: white; }
+  to {
+    opacity: 0.5;
+    color: transparent; } }
+
+@media screen and (max-width: 1024px) {
+  #land-full-name {
+    width: 100vw;
+    font-size: 5vw;
+    animation: none; }
+  #land-role {
+    font-size: 3vw; } }
+
+@media screen and (max-width: 600px) {
+  #land-full-name {
+    font-size: 8vw; }
+  #land-role {
+    font-size: 5vw; } }
