@@ -55,7 +55,7 @@ html, body {
   position: relative;
   color: white;
   animation: fadeOut 1s;
-  animation-delay: 2.5s;
+  animation-delay: 3s;
   animation-fill-mode: forwards; }
 
 #main-container {

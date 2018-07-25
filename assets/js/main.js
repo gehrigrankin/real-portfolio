@@ -33,7 +33,7 @@ $('#nav-skills').on('click',function(){
 
     setTimeout(function(){
         typeSkills(); 
-    }, 1500);
+    }, 1000);
 });
 $('#nav-contact').on('click',function(){ 
     scrollTo("#contact", 1000); 
