@@ -1,11 +1,11 @@
 const name = "Gehrig Rankin";
 const role = "Full Stack Web Developer"
-const projects = "projects";
-const skills = "skills";
+const projects = "PROJECTS";
+const career = "CAREER";
 let i = 0;
 let j = 0;
 let p = 0;
-let s = 0;
+let c = 0;
 let speed = 100;
 let done;
 
@@ -28,11 +28,15 @@ $('#nav-projects').on('click',function(){
     }, 1000);
         
 });
-$('#nav-skills').on('click',function(){ 
-    scrollTo("#skills", 1000); 
+$('#nav-career').on('click',function(){ 
+    scrollTo("#career", 1000); 
 
     setTimeout(function(){
-        typeSkills(); 
+        typeCareer(); 
+
+        setTimeout(function(){
+            typeCareerSub();
+        }, 1000);
     }, 1000);
 });
 $('#nav-contact').on('click',function(){ 
@@ -74,11 +78,37 @@ function typeProject(){
     }
 }
 
-function typeSkills(){
-    if (s < skills.length) {
-        document.getElementById("skills-title").innerHTML += skills.charAt(s);
-        s++;
-        setTimeout(typeSkills, speed);
+function typeCareer(){
+    if (c < career.length) {
+        document.getElementById("career-title").innerHTML += career.charAt(c);
+        c++;
+        setTimeout(typeCareer, speed);
+    }
+}
+
+let ed = 0;
+let sk = 0;
+let ex = 0;
+
+let education = 'Education';
+let skills = 'Skills';
+let experience = 'Experience';
+
+
+
+function typeCareerSub(){
+    if (ed < education.length) {
+        document.getElementById("education-title").innerHTML += education.charAt(ed);
+        ed++;
+    }
+    if (sk < skills.length) {
+        document.getElementById("skills-title").innerHTML += skills.charAt(sk);
+        sk++;
+    }
+    if (ex < experience.length) {
+        document.getElementById("experience-title").innerHTML += experience.charAt(ex);
+        ex++;
+        setTimeout(typeCareerSub, speed);
     }
 }
 

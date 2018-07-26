@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Bungee+Hairline");
+@import url("https://fonts.googleapis.com/css?family=Bungee+Hairline|Share+Tech+Mono");
 html, body {
   max-height: 100vh;
   margin: 0; }
@@ -38,7 +38,6 @@ html, body {
 #landing {
   position: relative;
   padding: 25% 0;
-  font-family: 'Bungee Hairline';
   word-spacing: 10px;
   animation: landSlideUp 2.5s;
   animation-delay: 3s;
@@ -47,6 +46,7 @@ html, body {
 #land-full-name {
   position: relative;
   vertical-align: middle;
+  font-family: 'share tech mono';
   animation: slideLeft 2s;
   animation-delay: 5s;
   animation-fill-mode: forwards; }
@@ -54,6 +54,7 @@ html, body {
 #land-role {
   position: relative;
   color: white;
+  font-family: 'bungee hairline';
   animation: fadeOut 1s;
   animation-delay: 3s;
   animation-fill-mode: forwards; }
@@ -74,8 +75,8 @@ html, body {
   .section ::after {
     vertical-align: middle; }
 
-#about-container, #portfolio-container, #skills-container, #contact-container {
-  margin: 25px 125px; }
+#about-container, #portfolio-container, #career-container, #contact-container {
+  margin: 25px 75px; }
 
 #about-me-window {
   position: relative;
@@ -98,8 +99,6 @@ html, body {
 
 #portfolio-container {
   position: relative; }
-  #portfolio-container #project-title {
-    font-family: 'Bungee Hairline'; }
   #portfolio-container .port-cols .column {
     margin: 10px;
     padding: 0;
@@ -113,10 +112,29 @@ html, body {
     #portfolio-container .port-cols .column:hover {
       border: 5px solid #00d1b2; }
 
-#skills-container {
+#career-container {
   position: relative; }
-  #skills-container #skills-title {
-    font-family: 'Bungee Hairline'; }
+  #career-container .columns:last-child {
+    padding: 10px 20px; }
+
+.career2 {
+  padding-left: 20px !important;
+  color: #00d1b2;
+  font-family: monospace; }
+
+.career3 {
+  color: #737373; }
+  .career3 .school-desc {
+    font-family: monospace; }
+    .career3 .school-desc div {
+      display: flex;
+      flex-direction: row; }
+
+.hairline {
+  font-family: 'Bungee Hairline'; }
+
+.tech-mono {
+  font-family: 'share tech mono'; }
 
 @keyframes showContainer {
   from {
