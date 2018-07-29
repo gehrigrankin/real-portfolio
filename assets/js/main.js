@@ -41,6 +41,10 @@ $('#nav-career').on('click',function(){
 });
 $('#nav-contact').on('click',function(){ 
     scrollTo("#contact", 1000); 
+
+    setTimeout(function(){
+        typeContact(); 
+    }, 1000);
 });
 
 
@@ -112,7 +116,16 @@ function typeCareerSub(){
     }
 }
 
+let co = 0;
+const contact = 'CONTACT';
 
+function typeContact(){
+    if (co < contact.length) {
+        document.getElementById("contact-title").innerHTML += contact.charAt(co);
+        co++;
+        setTimeout(typeContact, speed);
+    }
+}
 
 const scrollTo = (where, speed) => {
     const position = $(where).offset().top;

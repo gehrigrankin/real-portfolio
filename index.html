@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/stars.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/barGraph.css">
 </head>
 <body>
 
@@ -54,9 +55,9 @@
                 <div class="columns is-centered">
                     <div class="column is-three-quarters">
                         <div id="about-me-window">
-                            <img id="profile-pic" src="images/gehrigrankin.jpg" alt="Pictur of Gehrig Rankin">
+                            <img id="profile-pic" src="images/gehrigrankin.jpg" alt="Picture of Gehrig Rankin">
                             
-                            <p>
+                            <p class="has-text-grey-darker">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dicta esse laborum quia. Voluptates harum, quaerat quibusdam ipsam iusto itaque aliquam veniam sapiente alias delectus atque pariatur in. Explicabo ea repudiandae deleniti quasi maiores, itaque saepe fuga laudantium corrupti accusamus voluptatum voluptates ullam officia recusandae? Illum, dicta reprehenderit. Quisquam unde eius porro, iste ducimus rem ipsa repudiandae amet, omnis accusamus laudantium repellendus quaerat. Modi doloremque porro illum est minus iure dolorum et, tempore deserunt error odio magnam voluptatum minima inventore, atque aliquam obcaecati eligendi sint ut officiis adipisci cupiditate vero accusantium. Ad repudiandae veniam, veritatis animi rem et quaerat aperiam. lorem200
                             </p>
                         </div>     
@@ -117,20 +118,21 @@
                         <div id="experience">
                             <p id="experience-title" class="title has-text-white hairline">&nbsp;</p> 
                             
-                            <div class="title is-5 career2">
-                                Teachers Assistant at Trilogy Education<br>
+                            <div class="career2">
+                                <p class="title is-5">Teachers Assistant at Trilogy Education</p>
+
 
                                 <div class="title is-6 career3">
                                     <span class="has-text-grey-light">
                                     University of Arizona Coding Bootcamp
                                     - (2018)
-                                    </span><br>
+                                    </span>
                                 
                                     <span class="school-desc">
                                         <div>
                                             <span>-</span>
 
-                                            <span>Assist in teaching full stack (MERN) development</span>    
+                                            <span>Assist in teaching full stack (MERN) web development</span>    
                                         </div>
                                         <div>
                                             <span>-</span>
@@ -206,10 +208,136 @@
                         
                         <div id="skills">
                             <p id="skills-title" class="title has-text-white hairline">&nbsp;</p> 
+
+                            <div class="career2">
+                                <p class="title is-5">
+                                    Programming Languages
+                                </p>
+
+                                <div class="title is-6 career3 graph">
+                                    <span class="has-text-grey-light">
+                                        <div class="flex">
+                                            <div class="bar" style="width: 60%"></div>
+                                            <span>HTML</span>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="bar" style="width: 65%"></div>
+                                            <span>CSS</span>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="bar" style="width: 55%"></div>
+                                            <span>JavaScript</span>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="bar" style="width: 25%"></div>
+                                            <span>C++</span>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="bar" style="width: 25%"></div>
+                                            <span>Ruby</span>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="bar" style="width: 25%"></div>
+                                            <span>Java</span>
+                                        </div>
+                                    </span>
+                                </div>
+
+                                
+                                
+                            </div>
+                            <div class="career2">
+                                <p class="title is-5">
+                                    Frameworks
+                                </p>
+
+                                <div class="title is-6 career3 graph">
+                                    <span class="has-text-grey-light">
+                                        <div class="flex">
+                                            <div class="bar" style="width: 45%"></div>
+                                            <span>React</span>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="bar" style="width: 55%"></div>
+                                            <span>Express</span>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="bar" style="width: 65%"></div>
+                                            <span>jQuery</span>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="bar" style="width: 50%"></div>
+                                            <span>Handelbars</span>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="bar" style="width: 65%"></div>
+                                            <span>Bootstrap</span>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="bar" style="width: 65%"></div>
+                                            <span>Bulma</span>
+                                        </div>
+                                    </span>
+                                </div>
+
+                                
+                                
+                            </div>
+
+                            <div class="career2">
+                                <p class="title is-5">
+                                    Tools and Technologies
+                                </p>
+
+                                <div class="title is-6 career3 graph">
+                                    <span class="has-text-grey-light">
+                                        <div class="flex">
+                                            <div class="bar" style="width: 65%"></div>
+                                            <span>MySQL</span>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="bar" style="width: 65%"></div>
+                                            <span>MongoDB</span>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="bar" style="width: 60%"></div>
+                                            <span>Firebase</span>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="bar" style="width: 25%"></div>
+                                            <span>Redux</span>
+                                        </div>
+                                    
+                                    </span>
+                                </div>
+
+                                
+                                
+                            </div>
+                            
+                            
+
                         </div> 
                     </div>
                 </div>
             </div>
+        </div>
+        <div id="contact" class="section">
+            <div id="contact-container">
+                <div class="columns">
+                    <div class="column">
+                        <p id="contact-title" class="tech-mono title is-1 has-text-primary ">&nbsp;</p>
+                    </div>
+                </div>
+                <br><br>
+                
+                <div class="columns">
+                    <div id="email-window" class="column">
+
+                    </div>
+                </div>
+                
+            </div>    
         </div>
 
         

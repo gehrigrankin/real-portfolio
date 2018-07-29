@@ -16,7 +16,7 @@ html, body {
   background-color: #1a1a1a;
   z-index: 1;
   animation: navSlideIn 2s ease-in-out forwards;
-  animation-delay: 5s; }
+  animation-delay: 0s; }
 
 #nav-container {
   height: 100vh;
@@ -46,7 +46,7 @@ html, body {
 #land-full-name {
   position: relative;
   vertical-align: middle;
-  font-family: 'share tech mono';
+  font-family: 'bungee hairline';
   animation: slideLeft 2s;
   animation-delay: 5s;
   animation-fill-mode: forwards; }
@@ -119,8 +119,13 @@ html, body {
 
 .career2 {
   padding-left: 20px !important;
+  margin-bottom: 20px;
   color: #00d1b2;
-  font-family: monospace; }
+  font-family: monospace;
+  line-height: 1.25; }
+  .career2 .title.is-5 {
+    margin-bottom: 0;
+    color: #00d1b2; }
 
 .career3 {
   color: #737373; }
@@ -129,6 +134,24 @@ html, body {
     .career3 .school-desc div {
       display: flex;
       flex-direction: row; }
+
+.graph {
+  border-left: 2px solid grey;
+  margin-left: 10px; }
+
+.bar {
+  background-color: #00d1b2;
+  height: 10px;
+  margin-right: 3px; }
+
+.flex {
+  display: flex;
+  align-items: center; }
+
+#email-window {
+  background-color: grey;
+  padding: 25px;
+  border-top: 50px solid #262626; }
 
 .hairline {
   font-family: 'Bungee Hairline'; }

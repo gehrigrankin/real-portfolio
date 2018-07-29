@@ -25,7 +25,7 @@ html, body {
     z-index: 1;
     
     animation: navSlideIn 2s ease-in-out forwards;
-    animation-delay: 5s;
+    animation-delay: 0s; //5s
 }
 #nav-container {
     height: 100vh;
@@ -63,7 +63,7 @@ html, body {
 #land-full-name {
     position: relative;
     vertical-align: middle;
-    font-family: 'share tech mono';
+    font-family: 'bungee hairline';
     
     animation: slideLeft 2s;
     animation-delay: 5s;
@@ -168,9 +168,16 @@ html, body {
 }
 .career2 {
     padding-left: 20px !important;
-    
+    margin-bottom: 20px;
     color: $space-green;
     font-family: monospace;
+
+    line-height: 1.25;
+
+    .title.is-5 {
+        margin-bottom: 0;
+        color: $space-green;
+    }
 }
 .career3 {
     color: hsl(0,0%,45%);
@@ -184,8 +191,27 @@ html, body {
         }
     }
 }
+.graph {
+    border-left: 2px solid grey;
+    margin-left: 10px;
+}
+.bar {
+    background-color: $space-green;
+    height: 10px;
+    margin-right: 3px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
 
 
+#email-window {
+    background-color: grey;
+    padding: 25px;
+    border-top: 50px solid hsl(0,0%,15%);
+}
 
 
 .hairline {
