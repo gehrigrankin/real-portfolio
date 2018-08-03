@@ -78,6 +78,29 @@ html, body {
 #about-container, #portfolio-container, #career-container, #contact-container {
   margin: 25px 75px; }
 
+#contact {
+  position: relative; }
+
+#quick-contact {
+  position: absolute;
+  top: 50px;
+  right: 50px; }
+  #quick-contact #linkedin-btn > a {
+    color: grey; }
+    #quick-contact #linkedin-btn > a :hover {
+      color: #0077b5; }
+  #quick-contact #github-btn > a {
+    color: grey; }
+    #quick-contact #github-btn > a :hover {
+      color: white; }
+  #quick-contact #twitter-btn > a {
+    color: grey; }
+    #quick-contact #twitter-btn > a :hover {
+      color: #1da1f2; }
+
+a {
+  text-decoration: none; }
+
 #about-me-window {
   position: relative;
   opacity: 0;

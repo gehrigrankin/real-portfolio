@@ -43,7 +43,7 @@
         <div id='stars2'></div>
         <div id='stars3'></div>
     </div>
-    
+
     <div id="main-container">
         <div id="about-me" class="section">
             <div id="about-container">
@@ -322,7 +322,20 @@
                 </div>
             </div>
         </div>
-        <div id="contact" class="section">
+        <div id="contact" class="section">      
+            <div id="quick-contact">
+                <div id="linkedin-btn">
+                    <a target="_blank" href="https://www.linkedin.com/in/gehrigrankin/"><i class="fab fa-3x fa-linkedin"></i></a>
+                </div>
+                <div id="github-btn">
+                    <a target="_blank" href="https://github.com/gehrigrankin"><i class="fab fa-3x fa-github-square"></i></a>
+                </div>
+                <div id="twitter-btn">
+                    <a target="_blank" href="https://twitter.com/CodeGico"><i class="fab fa-3x fa-twitter-square"></i></a>
+                </div>
+            </div>      
+
+            
             <div id="contact-container">
                 <div class="columns">
                     <div class="column">
@@ -333,24 +346,55 @@
                 
                 <div class="columns is-centered">
                     <div id="email-window" class="column is-two-thirds">
-                        <div class="columns">
-                            <div class="column is-half">
-                                <input class="input" type="text" placeholder="Text input">
 
+                        <form action="mailto:rgrankin22@gmail.com" method="POST" enctype="text/plain">
+                            <div class="columns is-centered">
+                                <div class="column is-half">
+                                    <div class="field">
+                                        <label class="label">Name</label>
+                                        <div class="control has-icons-left">
+                                            <input class="input" type="text" placeholder="Jane Doe">
+                                            <span class="icon is-small is-left">
+                                                <i class="fas fa-user"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column is-half">
+                                    <div class="field">
+                                        <label class="label">Company</label>
+                                        <div class="control has-icons-left">
+                                            <input class="input" placeholder="ex. Trilogy Education">
+                                            <span class="icon is-small is-left">
+                                                <i class="fas fa-address-book"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="column is-half">
-                                <input class="input" type="email" placeholder="Text input">
+                        
+
+                            <div class="field">
+                                <label class="label">Message</label>
+                                <div class="control">
+                                    <textarea class="textarea" placeholder="Textarea"></textarea>
+                                </div>
                             </div>
-                        </div>
-                        <input class="input" type="text" placeholder="Text input">
+
+                            <br>
+                            <div class="control columns is-centered">
+                                <button class="button is-link has-background-primary" type="submit">Submit</button>
+                            </div>
+
+                        </form>
+                        
 
                     </div>
                 </div>
                 
             </div>    
-        </div>
-
-        
+            
+        </div>         
     </div>
     
     
@@ -360,5 +404,10 @@
     <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+
+
+
+
 
 
