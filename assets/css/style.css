@@ -82,24 +82,21 @@ html, body {
   position: relative; }
 
 #quick-contact {
-  position: absolute;
-  top: 50px;
-  right: 50px; }
-  #quick-contact #linkedin-btn > a {
-    color: grey; }
-    #quick-contact #linkedin-btn > a :hover {
-      color: #0077b5; }
-  #quick-contact #github-btn > a {
-    color: grey; }
-    #quick-contact #github-btn > a :hover {
-      color: white; }
-  #quick-contact #twitter-btn > a {
-    color: grey; }
-    #quick-contact #twitter-btn > a :hover {
-      color: #1da1f2; }
-
-a {
-  text-decoration: none; }
+  height: 100%;
+  font-size: 20px;
+  padding-top: 20%; }
+  #quick-contact * {
+    margin-bottom: 15px; }
+  #quick-contact #linkedin-btn {
+    background-color: #0077B5; }
+  #quick-contact #github-btn {
+    background-color: #1a1a1a; }
+  #quick-contact #twitter-btn {
+    background-color: #1DA1F2; }
+  #quick-contact a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px; }
 
 #about-me-window {
   position: relative;
@@ -122,18 +119,29 @@ a {
 
 #portfolio-container {
   position: relative; }
-  #portfolio-container .port-cols .column {
+  #portfolio-container .proj-cols .columns .column {
     margin: 10px;
     padding: 0;
     border: 5px solid rgba(50, 50, 50, 0.75);
     border-radius: 5px; }
-    #portfolio-container .port-cols .column .project {
+    #portfolio-container .proj-cols .columns .column .project {
+      position: relative;
       margin: 5px;
       border-radius: 5px;
-      height: 200px;
+      height: 35vh;
       background-color: #fff; }
-    #portfolio-container .port-cols .column:hover {
+      #portfolio-container .proj-cols .columns .column .project .description {
+        position: absolute;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.87);
+        height: 100%; }
+      #portfolio-container .proj-cols .columns .column .project img {
+        height: 100%;
+        width: 100%; }
+    #portfolio-container .proj-cols .columns .column:hover {
       border: 5px solid #00d1b2; }
+      #portfolio-container .proj-cols .columns .column:hover .project .description {
+        display: inline; }
 
 #career-container {
   position: relative; }

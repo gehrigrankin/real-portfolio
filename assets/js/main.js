@@ -17,12 +17,6 @@ $(document).ready(function(){
     typeName();
 });
 
-$('#quick-contact').on("click", function(){
-    $('#twitter-btn').toggleClass('transition-twit');
-    $('#linkedin-btn').toggleClass('transition-linkedin');
-    $('#github-btn').toggleClass('transition-github');
-});
-
 
 $('#nav-about').on('click',function(){ 
     scrollTo("#about-me", 1000); 
@@ -54,6 +48,10 @@ $('#nav-contact').on('click',function(){
     }, 1000);
 });
 
+
+$('#linkedin-btn').on('click', function(){
+    
+});
 
 
 function typeName(){

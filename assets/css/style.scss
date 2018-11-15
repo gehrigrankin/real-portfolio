@@ -108,44 +108,40 @@ html, body {
 
 #contact {
     position: relative;
+    
 }
+
 
 
 #quick-contact {
-    position: absolute;
-    top: 50px;
-    right: 50px;
+    height: 100%;
+    font-size: 20px;
+    padding-top: 20%;
 
-    #linkedin-btn>a {
-        color: grey;
-        
-        :hover {
-            color: rgb(0, 119, 181);
-        }
+    *{
+        margin-bottom: 15px;
+    }
+
+    #linkedin-btn {
+        background-color: #0077B5;
     }
     
-    #github-btn>a {
-        color: grey;
-        
-        :hover {
-            color: white;
-        }
+    #github-btn {
+        background-color: hsl(0,0,10%);
     }
     
-    #twitter-btn>a {
-        color: grey;
-        
-        :hover {
-            color: rgb(29, 161, 242)
-        }
+    #twitter-btn {
+        background-color: #1DA1F2;
     }
     
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    }
 }
 
 
-a {
-    text-decoration: none;
-}
 
 
 #about-me-window {
@@ -177,7 +173,8 @@ a {
 #portfolio-container {
     position: relative;
 
-    .port-cols .column {
+
+    .proj-cols .columns .column {
         
         margin: 10px;
         padding: 0;
@@ -186,19 +183,35 @@ a {
         border-radius: 5px;
         
         .project {
+            position: relative;
             margin: 5px;
             border-radius: 5px;
             
-            height: 200px;
+            height: 35vh;
             background-color: #fff;
+
+            .description {
+                position: absolute;
+                display: none;
+                background-color: rgba(0,0,0,.87);
+                height: 100%;
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
         }
 
         &:hover {
-            border: 5px solid $space-green; 
+            border: 5px solid $space-green;
+
+            .project .description {
+                display: inline;
+            }
         }
 
     }
- 
 }
 
 #career-container {
@@ -252,6 +265,7 @@ a {
     background-color: grey;
     padding: 25px;
     border-top: 50px solid hsl(0,0%,15%);
+
 }
 
 

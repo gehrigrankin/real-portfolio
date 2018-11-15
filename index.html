@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/stars.css">
@@ -73,36 +78,40 @@
                         <p id="project-title" class="tech-mono title is-1 has-text-primary ">&nbsp;</p>
                     </div>
                 </div>
-                <br><br>
-                <div class="columns port-cols">
-                    <div class="column">
-                        <div class="project"></div>
+
+                <div class="proj-cols">
+                    <div class="columns">
+                        <div class="column">
+                            <div class="project">
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptatibus, debitis a perspiciatis incidunt expedita. Expedita magni voluptas sunt saepe. A nostrum sapiente rerum quaerat.</p>
+                                </div>
+                                <img src="images/projects/Az-cen.png" alt="AZ Central News Scraper">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="project">
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptatibus, debitis a perspiciatis incidunt expedita. Expedita magni voluptas sunt saepe. A nostrum sapiente rerum quaerat.</p>
+                                </div>
+                                <img src="images/projects/Group-gen.png" alt="Group Generation">
+                            </div>
+                        </div>
                     </div>
-                    <div class="column">
-                        <div class="project"></div>
-                    </div>
-                    <div class="column">
-                        <div class="project"></div>
-                    </div>
-                    <div class="column">
-                        <div class="project"></div>
+                    <div class="columns">
+                        <div class="column">
+                            <div class="project">
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptatibus, debitis a perspiciatis incidunt expedita. Expedita magni voluptas sunt saepe. A nostrum sapiente rerum quaerat.</p>
+                                </div>
+                                    <img src="images/projects/Skelly.png" alt="Skelly">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="project"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="columns port-cols">
-                    <div class="column">
-                        <div class="project"></div>
-                    </div>
-                    <div class="column">
-                        <div class="project"></div>
-                    </div>
-                    <div class="column">
-                        <div class="project"></div>
-                    </div>
-                    <div class="column">
-                        <div class="project"></div>
-                    </div>
-                </div>
-            
             </div>    
         </div>
 
@@ -229,16 +238,16 @@
                                             <span>JavaScript</span>
                                         </div>
                                         <div class="flex">
+                                            <div class="bar" style="width: 35%"></div>
+                                            <span>Java</span>
+                                        </div>
+                                        <div class="flex">
                                             <div class="bar" style="width: 25%"></div>
                                             <span>C++</span>
                                         </div>
                                         <div class="flex">
                                             <div class="bar" style="width: 25%"></div>
                                             <span>Ruby</span>
-                                        </div>
-                                        <div class="flex">
-                                            <div class="bar" style="width: 25%"></div>
-                                            <span>Java</span>
                                         </div>
                                     </span>
                                 </div>
@@ -304,7 +313,7 @@
                                             <span>Firebase</span>
                                         </div>
                                         <div class="flex">
-                                            <div class="bar" style="width: 25%"></div>
+                                            <div class="bar" style="width: 45%"></div>
                                             <span>Redux</span>
                                         </div>
                                     
@@ -323,76 +332,95 @@
             </div>
         </div>
         <div id="contact" class="section">      
-            <div id="quick-contact">
-                <div id="linkedin-btn">
-                    <a target="_blank" href="https://www.linkedin.com/in/gehrigrankin/"><i class="fab fa-3x fa-linkedin"></i></a>
-                </div>
-                <div id="github-btn">
-                    <a target="_blank" href="https://github.com/gehrigrankin"><i class="fab fa-3x fa-github-square"></i></a>
-                </div>
-                <div id="twitter-btn">
-                    <a target="_blank" href="https://twitter.com/CodeGico"><i class="fab fa-3x fa-twitter-square"></i></a>
-                </div>
-            </div>      
-
+            
             
             <div id="contact-container">
-                <div class="columns">
-                    <div class="column">
-                        <p id="contact-title" class="tech-mono title is-1 has-text-primary ">&nbsp;</p>
+                <div id="contact-section">
+                    <div class="columns">
+                        <div class="column">
+                            <p id="contact-title" class="tech-mono title is-1 has-text-primary ">&nbsp;</p>
+                        </div>
                     </div>
-                </div>
-                <br><br>
-                
-                <div class="columns is-centered">
-                    <div id="email-window" class="column is-two-thirds">
+                    <br><br>
+                    
+                    <div class="columns is-centered">
+                        <div class="column is-4">
+                            <div id="quick-contact" class="has-text-white tech-mono">
 
-                        <form action="mailto:rgrankin22@gmail.com" method="POST" enctype="text/plain">
-                            <div class="columns is-centered">
-                                <div class="column is-half">
-                                    <div class="field">
-                                        <label class="label">Name</label>
-                                        <div class="control has-icons-left">
-                                            <input class="input" type="text" placeholder="Jane Doe">
-                                            <span class="icon is-small is-left">
-                                                <i class="fas fa-user"></i>
-                                            </span>
+                                <p>Email: Rgrankin22@gmail.com</p>
+                                <p>Phone: (703) 939-7355</p>
+
+                                <div>
+                                    <a target="_blank" href="https://www.linkedin.com/in/gehrigrankin/" class="has-text-centered tech-mono"><i class="has-text-link fab fa-lg fa-linkedin-in"></i>
+                                        : www.linkedin.com/in/gehrigrankin  
+                                    </a>
+                                </div>
+                            
+                                <div>
+                                    <a target="_blank" href="https://github.com/gehrigrankin" class="has-text-centered tech-mono"><i class="fab fa-lg fa-github"></i>
+                                        : www.github.com/gehrigrankin 
+                                    </a>
+                                </div>
+                            
+                                <div>
+                                    <a target="_blank" href="https://twitter.com/CodeGico" class="has-text-centered tech-mono"><i class="has-text-info fab fa-lg fa-twitter"></i>
+                                        : www.twitter.com/CodeGico
+                                    </a>
+                                </div>
+                        
+                            </div> 
+
+                        </div>
+                        <div id="email-window" class="column is-6">
+    
+                            <form action="mailto:rgrankin22@gmail.com" method="POST" enctype="text/plain">
+                                <div class="columns is-centered">
+                                    <div class="column is-half">
+                                        <div class="field">
+                                            <label class="label">Name</label>
+                                            <div class="control has-icons-left">
+                                                <input class="input" type="text" placeholder="Jane Doe">
+                                                <span class="icon is-small is-left">
+                                                    <i class="fas fa-user"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column is-half">
+                                        <div class="field">
+                                            <label class="label">Company</label>
+                                            <div class="control has-icons-left">
+                                                <input class="input" placeholder="ex. Trilogy Education">
+                                                <span class="icon is-small is-left">
+                                                    <i class="fas fa-address-book"></i>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="column is-half">
-                                    <div class="field">
-                                        <label class="label">Company</label>
-                                        <div class="control has-icons-left">
-                                            <input class="input" placeholder="ex. Trilogy Education">
-                                            <span class="icon is-small is-left">
-                                                <i class="fas fa-address-book"></i>
-                                            </span>
-                                        </div>
+                            
+    
+                                <div class="field">
+                                    <label class="label">Message</label>
+                                    <div class="control">
+                                        <textarea class="textarea" placeholder="Textarea"></textarea>
                                     </div>
                                 </div>
-                            </div>
-                        
-
-                            <div class="field">
-                                <label class="label">Message</label>
-                                <div class="control">
-                                    <textarea class="textarea" placeholder="Textarea"></textarea>
+    
+                                <br>
+                                <div class="control columns is-centered">
+                                    <button class="button is-link has-background-primary" type="submit">Submit</button>
                                 </div>
-                            </div>
-
-                            <br>
-                            <div class="control columns is-centered">
-                                <button class="button is-link has-background-primary" type="submit">Submit</button>
-                            </div>
-
-                        </form>
-                        
-
+    
+                            </form>
+                            
+    
+                        </div>
                     </div>
-                </div>
                 
-            </div>    
+                </div>     
+            </div> 
+            
             
         </div>         
     </div>
@@ -400,6 +428,8 @@
     
     <script src="https://code.jquery.com/jquery-3.3.1.min.js">
     </script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 
     <script src="assets/js/main.js"></script>
 </body>
