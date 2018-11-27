@@ -38,16 +38,18 @@ html, body {
     
     i {
         font-size: 35px; 
-    } 
-    .active {
+    }
+    
+    &:hover i, &.active i {
         color: $space-green;
     }
+
     &:hover {
+        background-color: hsl(0,0%,10%);
+    }
+
+    &.active {
         background-color: hsl(0,0%,15%);
-        
-        i {
-            color: $space-green;
-        }
     }
 }
 
@@ -118,7 +120,7 @@ html, body {
     font-size: 20px;
     padding-top: 20%;
 
-    *{
+    * {
         margin-bottom: 15px;
     }
 
@@ -156,6 +158,12 @@ html, body {
     animation: showContainer 1.5s ease-in-out;
     animation-fill-mode: forwards;
     animation-delay: 3s;
+}
+
+#bio {
+    p {
+        padding-bottom: 10px;
+    }
 }
 
 #profile-pic {
@@ -208,6 +216,7 @@ html, body {
 
             .project .description {
                 display: inline;
+                text-align: center;
             }
         }
 

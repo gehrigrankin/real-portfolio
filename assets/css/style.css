@@ -28,12 +28,12 @@ html, body {
   height: 60px; }
   .nav.icon i {
     font-size: 35px; }
-  .nav.icon .active {
+  .nav.icon:hover i, .nav.icon.active i {
     color: #00d1b2; }
   .nav.icon:hover {
+    background-color: #1a1a1a; }
+  .nav.icon.active {
     background-color: #262626; }
-    .nav.icon:hover i {
-      color: #00d1b2; }
 
 #landing {
   position: relative;
@@ -108,6 +108,9 @@ html, body {
   animation-fill-mode: forwards;
   animation-delay: 3s; }
 
+#bio p {
+  padding-bottom: 10px; }
+
 #profile-pic {
   position: absolute;
   top: -125px;
@@ -141,7 +144,8 @@ html, body {
     #portfolio-container .proj-cols .columns .column:hover {
       border: 5px solid #00d1b2; }
       #portfolio-container .proj-cols .columns .column:hover .project .description {
-        display: inline; }
+        display: inline;
+        text-align: center; }
 
 #career-container {
   position: relative; }
