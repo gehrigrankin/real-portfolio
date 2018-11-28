@@ -193,6 +193,8 @@ html, body {
   background-color: grey;
   padding: 25px;
   border-top: 50px solid #262626; }
+  #email-window input {
+    width: 75%; }
 
 .modal .modal-content {
   margin: auto 1rem; }
